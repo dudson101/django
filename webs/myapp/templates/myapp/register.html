@@ -4,6 +4,10 @@
     {% csrf_token %}
     {{ form.as_p }}
     {{form.email.label_tag}} {{form.email}}
+    
+    <input type="radio" name="option" value="driver"> Driver<br>
+    <input type="radio" name="option" value="admin"> Admin<br>
+    <input type="radio" name="option" value="sponsor"> Sponsor<br>
 
     <button type="submit">Register</button>
 </form>
